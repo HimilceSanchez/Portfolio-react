@@ -3,11 +3,13 @@ function Header() {
     const menu = [
         {
             name: "INICIO",
-            id: 1
+            id: 1,
+            href: "#inicio"
         },
         {
             name: "HABILIDADES",
             id: 2
+
         },
         {
             name: "CONTACTO",
