@@ -1,5 +1,6 @@
 import Strings from '../Shared/Strings'
-import { IoArrowForwardOutline } from "react-icons/io5";
+
+
 function Habilidades() {
     const HabilidadesList = [
         {
