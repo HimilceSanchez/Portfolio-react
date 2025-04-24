@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Contact = () => {
     const [name, setName] = useState<string>('');
@@ -32,7 +32,7 @@ const Contact = () => {
                     'Content-Type': 'application/json'
                 }
             })
-            .then(response => {
+            .then(() => {
                 setDescription('');
                 setAsunto('');
                 setName('');
@@ -102,5 +102,7 @@ const Contact = () => {
         </div>
     );
 };
+
+
 
 export default Contact;
