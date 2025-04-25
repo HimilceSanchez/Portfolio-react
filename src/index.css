@@ -33,7 +33,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   
-  
 }
 
 h1 {
@@ -74,4 +73,21 @@ button:focus-visible {
   
 }
 
+/* Añade esto a tu hoja de estilos global */
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
+/* Revisa si hay elementos con width fijo o márgenes negativos */
+section, .container, .row {
+  max-width: 100vw;
+}
+
+/* Si usas un framework como Bootstrap, asegúrate de que las filas no causen overflow */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
