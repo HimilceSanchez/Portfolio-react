@@ -78,7 +78,7 @@ button:focus-visible {
   
 }
 
-/* Añade esto a tu hoja de estilos global */
+
 body, html {
   overflow-x: hidden;
   margin: 0;
