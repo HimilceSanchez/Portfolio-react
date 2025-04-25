@@ -7,7 +7,7 @@ function About() {
         <h2 className='text-[40px] font-bold'>{Strings.ABOUT_HEADING}</h2>
         <BiSolidQuoteAltLeft className="bg-purple-300 p-3 text-[44px] rounded-full
         mt-6 text-white"/>
-            <h2 className='my-5 text-gray-400 text-[14px]'>{Strings.ABOUT_DESC}</h2>
+            <h2 className='my-5 text-gray-400 text-[14px] text-center'>{Strings.ABOUT_DESC}</h2>
         <BiSolidQuoteAltRight className="bg-purple-300 p-3 text-[44px] rounded-full
         mt-6 text-white"/>
 
