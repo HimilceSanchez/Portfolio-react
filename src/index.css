@@ -70,15 +70,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-
-  h2{
-    font-size: 2.5em;
-
-  }
+  
   
 }
 
-
+/* Añade esto a tu hoja de estilos global */
 body, html {
   overflow-x: hidden;
   margin: 0;
