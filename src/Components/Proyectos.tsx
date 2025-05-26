@@ -5,7 +5,7 @@ const projectsData = [
     {
         id: 1,
         title: '3Deluxe',
-        description: 'Proyecto de pagina web para una emoresa ficticia hecha con angular ',
+        description: 'Proyecto de pagina web para una empresa ficticia hecha con angular ',
         // Replace VIDEO_ID_1 with your actual YouTube video ID
         videoEmbedUrl: 'https://www.youtube.com/embed/-Yz1fRRTz0I?si=XeXon6-dSWzrVbRq' 
     },
