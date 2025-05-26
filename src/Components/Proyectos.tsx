@@ -4,10 +4,10 @@ import Strings from '../Shared/Strings';
 const projectsData = [
     {
         id: 1,
-        title: 'Proyecto Alpha Web',
-        description: 'Desarrollo de una aplicación web interactiva utilizando React y Firebase, enfocada en la gestión de tareas.',
+        title: '3Deluxe',
+        description: 'Proyecto de pagina web para una emoresa ficticia hecha con angular ',
         // Replace VIDEO_ID_1 with your actual YouTube video ID
-        videoEmbedUrl: 'https://www.youtube.com/embed/wGxDfSWC4Ww?si=VaSfT7tfHHa_Ax-n' 
+        videoEmbedUrl: 'https://www.youtube.com/embed/-Yz1fRRTz0I?si=XeXon6-dSWzrVbRq' 
     },
     {
         id: 2,
