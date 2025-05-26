@@ -7,7 +7,7 @@ const projectsData = [
         title: 'Proyecto Alpha Web',
         description: 'Desarrollo de una aplicación web interactiva utilizando React y Firebase, enfocada en la gestión de tareas.',
         // Replace VIDEO_ID_1 with your actual YouTube video ID
-        videoEmbedUrl: 'https://www.youtube.com/embed/VIDEO_ID_1' 
+        videoEmbedUrl: 'https://www.youtube.com/embed/wGxDfSWC4Ww?si=VaSfT7tfHHa_Ax-n' 
     },
     {
         id: 2,
