@@ -23,18 +23,13 @@ function Header({ toggleSidebar }: HeaderProps) {
             link: "#habilidades"
         },
         {
-            name: "PROYECTOS",
-            id: 4,
-            link: "#proyectos"
-        },
-        {
             name: "PÁGINAS",
-            id: 5,
+            id: 4,
             link: "#paginas"
         },
         {
             name: "CONTACTO",
-            id: 6,
+            id: 5,
             link: "#contacto"
         },
     ];
