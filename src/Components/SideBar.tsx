@@ -1,4 +1,4 @@
-import { IoLogoGithub, IoLogoLinkedin, IoHome, IoPerson, IoCode, IoFolder, IoGlobe, IoMail } from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 
 interface SideBarProps {
   isOpen: boolean;
@@ -22,15 +22,8 @@ function SideBar({ isOpen }: SideBarProps) {
         md:flex /* Ensure display flex on desktop */
       `}
     >
-        <div className="flex flex-col gap-6 mb-10">
-            <a href="#inicio" className='text-[24px] cursor-pointer hover:scale-110 transition-all ease-in-out text-purple-600'><IoHome /></a>
-            <a href="#sobre-mi" className='text-[24px] cursor-pointer hover:scale-110 transition-all ease-in-out text-purple-600'><IoPerson /></a>
-            <a href="#habilidades" className='text-[24px] cursor-pointer hover:scale-110 transition-all ease-in-out text-purple-600'><IoCode /></a>
-            <a href="#proyectos" className='text-[24px] cursor-pointer hover:scale-110 transition-all ease-in-out text-purple-600'><IoFolder /></a>
-            <a href="#paginas" className='text-[24px] cursor-pointer hover:scale-110 transition-all ease-in-out text-purple-600'><IoGlobe /></a>
-            <a href="#contacto" className='text-[24px] cursor-pointer hover:scale-110 transition-all ease-in-out text-purple-600'><IoMail /></a>
-        </div>
-        <div className="flex flex-col gap-4 mb-10 text-[20px]">
+        <h2 className={`-rotate-90 tracking-widest ${isOpen && typeof window !== 'undefined' && window.innerWidth < 768 ? 'mt-28' : 'md:mt-20'}`}>PORTFOLIO</h2>
+        <div className="flex flex-col gap-8 mb-10 text-[30px]">
             <a href="https://github.com/HimilceSanchez" target="_blank" rel="noopener noreferrer"><IoLogoGithub className='cursor-pointer hover:scale-110 transition-all ease-in-out' /></a>
             <a href='https://www.linkedin.com/in/himilce-sanchez-guevara-91b742334/' target="_blank" rel="noopener noreferrer"> <IoLogoLinkedin className='cursor-pointer hover:scale-110 transition-all ease-in-out' /></a>
         </div>

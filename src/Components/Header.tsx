@@ -6,30 +6,38 @@ interface HeaderProps {
 }
 
 function Header({ toggleSidebar }: HeaderProps) {
-    const menu = [ //
+    const menu = [
         {
             name: "INICIO",
             id: 1,
-            // link: "#introduction" // Example if using scroll-to-id
+            link: "#inicio"
         },
         {
-            name: "HABILIDADES", //
-            id: 2
-            // link: "#habilidades"
+            name: "SOBRE MÍ",
+            id: 2,
+            link: "#sobre-mi"
         },
-        { // New menu item for Proyectos
+        {
+            name: "HABILIDADES",
+            id: 3,
+            link: "#habilidades"
+        },
+        {
             name: "PROYECTOS",
-            id: 4 // New ID
-            // link: "#proyectos"
+            id: 4,
+            link: "#proyectos"
         },
         {
-            name: "CONTACTO", //
-            id: 3
-            // link: "#contacto"
+            name: "PÁGINAS",
+            id: 5,
+            link: "#paginas"
+        },
+        {
+            name: "CONTACTO",
+            id: 6,
+            link: "#contacto"
         },
     ];
-    // Sort menu by ID if order matters, or arrange manually
-    menu.sort((a, b) => a.id - b.id);
 
 
     const [isContactDropdownOpen, setIsContactDropdownOpen] = useState(false);
@@ -54,13 +62,13 @@ function Header({ toggleSidebar }: HeaderProps) {
             </div>
             <div className="hidden md:flex gap-10 xl:gap-16"> {/* Adjusted gap for more items */}
                 {menu.map((item) => (
-                    <div 
+                    <a 
                         key={item.id} 
+                        href={item.link}
                         className="cursor-pointer hover:underline font-medium text-sm lg:text-base"
-                        // onClick={() => item.link && scrollToSection(item.link.substring(1))}
                     >
                         <h2>{item.name}</h2>
-                    </div>
+                    </a>
                 ))}
             </div>
             <div className="relative">
