@@ -1,7 +1,9 @@
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [name, setName] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
     const [asunto, setAsunto] = useState<string>('');
     const [description, setDescription] = useState<string>('');
     const [color, setColor] = useState<string>('bg-purple-400 hover:bg-purple-200');
@@ -11,35 +13,28 @@ const Contact = () => {
     const [label, setLabel] = useState<string>('SEND');
 
     const send = () => {
-        if (description && asunto && name) {
-            const contenido = {
-                "content": "Mensaje:",
-                "embeds": [
-                    {
-                        "title": asunto,
-                        "description": description,
-                        "footer": {
-                            "text": "De: " + name
-                        }
-                    }
-                ]
+        if (description && asunto && name && email) {
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                subject: asunto,
+                message: description
             };
 
-            fetch('https://discord.com/api/webhooks/1365078436615426219/wx-7BlkeoNpUSgRr7GEkUxi-ZjxDcRhSDkUd70DsNYXXyoeMyu1tTgOsrJQQoA8tqvAi', {
-                method: 'POST',
-                body: JSON.stringify(contenido),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
+            emailjs.send('service_czw33c8', 'template_d31vp0x', templateParams, 'bAhrqctG0QzwG4f1V')
             .then(() => {
                 setDescription('');
                 setAsunto('');
                 setName('');
+                setEmail('');
                 setFormulario('hidden');
                 setThanks('block');
                 setBoton('hidden');
             })
+            .catch(() => {
+                setColor('bg-red-500 hover:bg-red-600');
+                setLabel('Error, try again');
+            });
         } else {
             setColor('bg-red-500 hover:bg-red-600');
             setLabel('Error, try again');
@@ -64,6 +59,16 @@ const Contact = () => {
                         onChange={e => setName(e.target.value)} 
                         type='text' 
                         placeholder='Escribe tu nombre' 
+                        className='w-full p-2 rounded text-gray-800 bg-purple-100' 
+                    />
+                </div>
+                <div className="mb-3">
+                    <label className='block mb-2 font-medium'>Email o Teléfono</label>
+                    <input 
+                        value={email} 
+                        onChange={e => setEmail(e.target.value)} 
+                        type='text' 
+                        placeholder='Tu email o teléfono para contactarte' 
                         className='w-full p-2 rounded text-gray-800 bg-purple-100' 
                     />
                 </div>

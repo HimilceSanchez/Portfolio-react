@@ -28,12 +28,12 @@ function App() {
         <main className="flex-1 pt-[90px] md:ml-[90px] overflow-y-auto">
           <div className='grid grid-cols-1 md:grid-cols-3'>
             <div className='col-span-2 p-5'>
-              <Introduction/>
-              <About/>
-              <Habilidades/>
-              <Proyectos />
-              <Paginas />
-              <Contact/>
+              <section id="inicio"><Introduction/></section>
+              <section id="sobre-mi"><About/></section>
+              <section id="habilidades"><Habilidades/></section>
+              <section id="proyectos"><Proyectos /></section>
+              <section id="paginas"><Paginas /></section>
+              <section id="contacto"><Contact/></section>
             </div>
             <div className='hidden md:block'>
               <ProgressBar/>
