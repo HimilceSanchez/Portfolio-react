@@ -8,7 +8,8 @@ import ProgressBar from './Components/ProgressBar'; //
 import SideBar from './Components/SideBar'; //
 import Habilidades from './Components/Habilidades'; //
 import Contact from './Components/Contact'; //
-import Proyectos from './Components/Proyectos'; // 
+import Proyectos from './Components/Proyectos'; //
+import Paginas from './Components/Paginas'; // 
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -30,7 +31,8 @@ function App() {
               <Introduction/>
               <About/>
               <Habilidades/>
-              <Proyectos /> 
+              <Proyectos />
+              <Paginas />
               <Contact/>
             </div>
             <div className='hidden md:block'>
