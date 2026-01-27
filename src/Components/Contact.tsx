@@ -5,6 +5,7 @@ const Contact = () => {
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [asunto, setAsunto] = useState<string>('');
+    const [telefono, setTelefono] = useState<string>('');
     const [description, setDescription] = useState<string>('');
     const [color, setColor] = useState<string>('bg-purple-400 hover:bg-purple-200');
     const [formulario, setFormulario] = useState<string>('block');
@@ -17,6 +18,7 @@ const Contact = () => {
             const templateParams = {
                 from_name: name,
                 from_email: email,
+                phone: telefono,
                 subject: asunto,
                 message: description
             };
@@ -27,6 +29,7 @@ const Contact = () => {
                 setAsunto('');
                 setName('');
                 setEmail('');
+                setTelefono('');
                 setFormulario('hidden');
                 setThanks('block');
                 setBoton('hidden');
@@ -63,12 +66,22 @@ const Contact = () => {
                     />
                 </div>
                 <div className="mb-3">
-                    <label className='block mb-2 font-medium'>Email o Teléfono</label>
+                    <label className='block mb-2 font-medium'>Email</label>
                     <input 
                         value={email} 
                         onChange={e => setEmail(e.target.value)} 
                         type='text' 
                         placeholder='Tu email o teléfono para contactarte' 
+                        className='w-full p-2 rounded text-gray-800 bg-purple-100' 
+                    />
+                </div>
+                <div className="mb-3">
+                    <label className='block mb-2 font-medium'>Teléfono</label>
+                    <input 
+                        value={telefono} 
+                        onChange={e => setTelefono(e.target.value)} 
+                        type='text' 
+                        placeholder='Tu teléfono para contactarte' 
                         className='w-full p-2 rounded text-gray-800 bg-purple-100' 
                     />
                 </div>
