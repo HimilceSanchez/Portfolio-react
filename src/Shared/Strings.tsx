@@ -1,6 +1,6 @@
 
 export default {
-    ABOUT_HEADING: 'Mi nombre es Himilce,\n soy estudiante de 1º de DAW', //
+    ABOUT_HEADING: 'Mi nombre es Himilce,\n soy estudiante de 2º de DAW', //
     ABOUT_DESC: "Me gusta la programacion y el diseño de paginas web.\n" + //
     "Me gusta aprender cosas nuevas\n", //
 
@@ -24,5 +24,7 @@ export default {
     MY_CITY: 'Almería',
 
     PROYECTOS_HEADING: 'Mis Proyectos Destacados',
-    PROYECTOS_SUBHEADING: 'Aquí puedes ver algunos de mis trabajos en acción.'
+    PROYECTOS_SUBHEADING: 'Aquí puedes ver algunos de mis trabajos en acción.',
+
+    EXPERIENCIA: 'Experiencia Laboral',
 };

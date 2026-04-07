@@ -9,6 +9,7 @@ import SideBar from './Components/SideBar'; //
 import Habilidades from './Components/Habilidades'; //
 import Contact from './Components/Contact'; //
 
+import Experiencia from './Components/Experiencia';
 import Paginas from './Components/Paginas'; // 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <section id="inicio"><Introduction/></section>
               <section id="sobre-mi"><About/></section>
               <section id="habilidades"><Habilidades/></section>
+              <section id="experiencia"><Experiencia/></section>
              
               <section id="paginas"><Paginas /></section>
               <section id="contacto"><Contact/></section>
