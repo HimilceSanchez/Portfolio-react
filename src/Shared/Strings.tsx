@@ -10,10 +10,16 @@ export default {
     JAVA_DESC: 'Tengo experienza trabajando con Java en la FP', //
 
     REACT: 'REACT', //
-    REACT_DESC: 'He trabajado con React en la FP y en proyectos personales', //
+    REACT_DESC: 'He usado React en la FP y en algunos de mis proyectos', //
 
     CSS: 'CSS', //
     CSS_DESC: 'Lo que mas me gusta es el diseño de paginas web', //
+
+    ANGULAR: 'ANGULAR', //
+    ANGULAR_DESC: 'He trabajado con Angular en proyectos de la FP y en proyectos personales', //
+
+    VUE: 'VUE.JS', //
+    VUE_DESC: 'He explorado Vue.js para el desarrollo de interfaces web', //
 
     CONTACT: 'CONTACTA CONMIGO', //
 

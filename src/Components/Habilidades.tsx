@@ -20,6 +20,18 @@ function Habilidades() {
           desc: Strings.CSS_DESC,
           logo: "/css.png",
         },
+        {
+          id: 4,
+          title: Strings.ANGULAR,
+          desc: Strings.ANGULAR_DESC,
+          logo: "/angular.png",
+        },
+        {
+          id: 5,
+          title: Strings.VUE,
+          desc: Strings.VUE_DESC,
+          logo: "/vue.png",
+        },
       ];
       
   return (
