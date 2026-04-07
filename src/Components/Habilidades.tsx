@@ -1,12 +1,30 @@
 import Strings from '../Shared/Strings'
 
+type Habilidad = { id: number; title: string; desc: string; logo: string }
+
+function HabilidadCard({ item }: { item: Habilidad }) {
+    return (
+        <div className='text-center flex flex-col items-center gap-4 w-[140px] sm:w-[160px] md:w-[180px]'>
+            <div className='bg-gray-200 rounded-full w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px]'>
+                <img
+                    src={item.logo}
+                    alt={item.title}
+                    className='w-full h-full p-3 sm:p-4 md:p-5 hover:scale-110 transition-all cursor-pointer'
+                />
+            </div>
+            <h2 className='font-bold text-sm sm:text-base md:text-lg'>{item.title}</h2>
+            <p className='text-gray-400 text-xs sm:text-sm md:text-base'>{item.desc}</p>
+        </div>
+    )
+}
+
 function Habilidades() {
     const HabilidadesList = [
         {
           id: 1,
           title: Strings.JAVA,
           desc: Strings.JAVA_DESC,
-          logo: "/java.jpg",
+          logo: "/java.png",
         },
         {
           id: 2,
@@ -48,20 +66,17 @@ function Habilidades() {
         </div>
         
         {/* Lista de habilidades */}
-        <div className='flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4 lg:gap-8 mt-8 md:mt-16'>
-            {HabilidadesList.map((item)=>(
-                <div key={item.id} className='text-center flex flex-col justify-center items-center gap-4 md:gap-6 w-full max-w-[300px]'>
-                    <div className='bg-gray-200 rounded-full w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px]'>
-                        <img 
-                            src={item.logo} 
-                            alt={item.title}
-                            className='w-full h-full p-3 sm:p-4 md:p-5 hover:scale-110 transition-all cursor-pointer'
-                        />
-                    </div>
-                    <h2 className='mt-2 md:mt-5 font-bold text-sm sm:text-base md:text-lg'>{item.title}</h2>
-                    <p className='text-gray-400 text-xs sm:text-sm md:text-base'>{item.desc}</p>
-                </div>
-            ))}
+        <div className='flex flex-col items-center gap-10 md:gap-12 mt-8 md:mt-16'>
+            <div className='flex justify-center gap-10 md:gap-12 w-full'>
+                {HabilidadesList.slice(0, 3).map((item) => (
+                    <HabilidadCard key={item.id} item={item} />
+                ))}
+            </div>
+            <div className='flex justify-center gap-10 md:gap-12 w-full'>
+                {HabilidadesList.slice(3).map((item) => (
+                    <HabilidadCard key={item.id} item={item} />
+                ))}
+            </div>
         </div>
     </div>
   )
