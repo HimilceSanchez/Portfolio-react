@@ -1,8 +1,8 @@
 function ProfilePic() {
     return (
-      <div className='fixed mt-[80px]'>
+      <div className='fixed '>
           <img src="/soyyo.jpg"
-          className='h-screen object-cover w-screen'/>
+          className='w-120 h-screen align-right'/>
       </div>
     )
   }

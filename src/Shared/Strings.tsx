@@ -1,8 +1,9 @@
 
 export default {
-    ABOUT_HEADING: 'Mi nombre es Himilce,\n soy estudiante de 2º de DAW', //
-    ABOUT_DESC: "Me gusta la programacion y el diseño de paginas web.\n" + //
-    "Me gusta aprender cosas nuevas\n", //
+    ABOUT_HEADING: 'Tengo 21 años, soy estudiante de 2º de DAW en practicas ', //
+    ABOUT_DESC: "Me gusta el diseño de paginas web y la creacion de estas\n" + //
+    "Proximamente quiero hacer la especializacion en IA y Big Data\n" +
+    "Tambien querria hacer la especializacion en Videojuegos y Realidad Virtual", //
 
     HABILIDADES: 'Habilidades', //
     HABILIDADES_DESC: 'Estas son algunas de mis habilidades en la programacion', //
@@ -29,8 +30,8 @@ export default {
     MY_AGE: '20', 
     MY_CITY: 'Almería',
 
-    PROYECTOS_HEADING: 'Mis Proyectos Destacados',
-    PROYECTOS_SUBHEADING: 'Aquí puedes ver algunos de mis trabajos en acción.',
+    PAGINAS_HEADING: 'Páginas Web', //
+    PAGINAS_SUBHEADING: 'Aquí puedes ver algunas de las paginas web/secciones de paginas web que he hecho para particulares y empresas', //
 
     EXPERIENCIA: 'Experiencia Laboral',
 };
