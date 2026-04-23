@@ -8,7 +8,7 @@ function Introduction() {
           <h2 className='text-[50px] font-bold text-black tracking-widest
           mt-5'>HIMILCE <br></br>SANCHEZ</h2>
           <img src="/avatar.png"
-          className='w-[160px] h-[160xp] bg-gray-200 p-7 rounded-full'
+          className='w-[160px] h-[160xp] bg-purple-200 p-7 rounded-full'
           />
       </div>
     )

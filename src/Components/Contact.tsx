@@ -7,7 +7,7 @@ const Contact = () => {
     const [asunto, setAsunto] = useState<string>('');
     const [telefono, setTelefono] = useState<string>('');
     const [description, setDescription] = useState<string>('');
-    const [color, setColor] = useState<string>('bg-purple-400 hover:bg-purple-200');
+    const [color, setColor] = useState<string>('bg-purple-500 hover:bg-purple-700 text-white');
     const [formulario, setFormulario] = useState<string>('block');
     const [thanks, setThanks] = useState<string>('hidden');
     const [boton, setBoton] = useState<string>('block');
@@ -71,7 +71,7 @@ const Contact = () => {
                         value={email} 
                         onChange={e => setEmail(e.target.value)} 
                         type='text' 
-                        placeholder='Tu email o teléfono para contactarte' 
+                        placeholder='Tu email para contactarte' 
                         className='w-full p-2 rounded text-gray-800 bg-purple-100' 
                     />
                 </div>
@@ -112,7 +112,7 @@ const Contact = () => {
             <div className={`${boton} text-center mt-3`}>
                 <button 
                     onClick={send} 
-                    className={`${color} text-white py-2 px-6 rounded-full transition-colors duration-300`}
+                    className={`${color} py-2 px-6 rounded-full transition-colors duration-300`}
                 >
                     {label}
                 </button>

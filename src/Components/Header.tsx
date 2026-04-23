@@ -50,10 +50,10 @@ function Header({ toggleSidebar }: HeaderProps) {
     return (
         <div className="flex items-center w-full justify-between border-b-[1px] border-purple-100 fixed top-0 left-0 right-0 bg-white z-30">
             <div 
-              className="w-[90px] h-[90px] bg-purple-100 flex items-center justify-center cursor-pointer"
+              className="w-[90px] h-[90px] bg-purple-200 flex items-center justify-center cursor-pointer"
               onClick={toggleSidebar}
             >
-                <img src="/logo.png" alt="logo" className="p-1" />
+                <img src="/avatar.png" alt="logo" className="p-1" />
             </div>
             <div className="hidden md:flex gap-10 xl:gap-16"> {/* Adjusted gap for more items */}
                 {menu.map((item) => (
@@ -68,7 +68,7 @@ function Header({ toggleSidebar }: HeaderProps) {
             </div>
             <div className="relative">
                 <div 
-                    className="w-[90px] h-[90px] bg-purple-300 flex justify-center items-center cursor-pointer"
+                    className="w-[90px] h-[90px] bg-purple-200 flex justify-center items-center cursor-pointer"
                     onClick={toggleContactDropdown}
                 >
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ function Header({ toggleSidebar }: HeaderProps) {
                     </svg>
                 </div>
                 {isContactDropdownOpen && (
-                    <div className="absolute right-0 mt-1 w-64 bg-white border border-purple-200 rounded-md shadow-lg py-2 z-30">
+                    <div className="absolute right-0 mt-1 w-64 bg-purple-50 border border-purple-500 rounded-md shadow-lg py-2 z-30">
                         <div className="px-4 py-2 text-sm text-gray-700">
                             <p className="font-semibold">Nombre:</p>
                             <p>{Strings.MY_FULL_NAME}</p>

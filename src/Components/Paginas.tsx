@@ -10,7 +10,7 @@ function Paginas() {
       tecnologias: "App creada con Angular, hice los logos y banners con canva, e hice el diseño de la web en figma "
     },
     {
-      nombre: "Cactus Aventures - Taxonomy of the Cactaceae",
+      nombre: "Cactus Aventures",
       url: "https://cactus-aventures.com/taxonomyofthecactaceae.html",
       descripcion: "Seccion para la venta de una coleccion de libros sobre cactus",
       tecnologias: "Seccion creada con Angular, implemente la pasarela de pagos de redsis y de paypal, e hice el diseño con figma"

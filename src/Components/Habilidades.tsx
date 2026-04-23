@@ -5,7 +5,7 @@ type Habilidad = { id: number; title: string; desc: string; logo: string }
 function HabilidadCard({ item }: { item: Habilidad }) {
     return (
         <div className='text-center flex flex-col items-center gap-4 w-[140px] sm:w-[160px] md:w-[180px]'>
-            <div className='bg-gray-200 rounded-full w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px]'>
+            <div className='bg-purple-100 rounded-full w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px]'>
                 <img
                     src={item.logo}
                     alt={item.title}
