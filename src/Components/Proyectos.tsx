@@ -9,13 +9,13 @@ const projectsData = [
         // Replace VIDEO_ID_1 with your actual YouTube video ID
         videoEmbedUrl: 'https://www.youtube.com/embed/-Yz1fRRTz0I?si=XeXon6-dSWzrVbRq' 
     },
-    {
-        id: 2,
-        title: 'Diseño Portfolio Personal',
-        description: 'Creación de un portfolio dinámico y responsivo para mostrar habilidades y proyectos, construido con TypeScript y Tailwind CSS.',
-        // Replace VIDEO_ID_2 with your actual YouTube video ID
-        videoEmbedUrl: 'https://www.youtube.com/embed/VIDEO_ID_2'
-    },
+    // {
+    //     id: 2,
+    //     title: 'Diseño Portfolio Personal',
+    //     description: 'Creación de un portfolio dinámico y responsivo para mostrar habilidades y proyectos, construido con TypeScript y Tailwind CSS.',
+    //     // Replace VIDEO_ID_2 with your actual YouTube video ID
+    //     videoEmbedUrl: 'https://www.youtube.com/embed/VIDEO_ID_2'
+    // },
     // Add more projects like this:
     // {
     //     id: 3,
