@@ -33,5 +33,8 @@ export default {
     PAGINAS_HEADING: 'Páginas Web', //
     PAGINAS_SUBHEADING: 'Aquí puedes ver algunas de las paginas web/secciones de paginas web que he hecho para particulares y empresas', //
 
+    PROYECTOS_HEADING: 'Mis Proyectos Destacados',
+    PROYECTOS_SUBHEADING: 'Aquí puedes ver algunos de mis trabajos en acción.',
+
     EXPERIENCIA: 'Experiencia Laboral',
 };

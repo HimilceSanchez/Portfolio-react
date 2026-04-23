@@ -11,6 +11,7 @@ import Contact from './Components/Contact'; //
 
 import Experiencia from './Components/Experiencia';
 import Paginas from './Components/Paginas'; // 
+import Proyectos from './Components/Proyectos';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -33,7 +34,7 @@ function App() {
               <section id="sobre-mi"><About/></section>
               <section id="habilidades"><Habilidades/></section>
               <section id="experiencia"><Experiencia/></section>
-             
+              <section id="proyectos"><Proyectos/></section>
               <section id="paginas"><Paginas /></section>
               <section id="contacto"><Contact/></section>
             </div>
